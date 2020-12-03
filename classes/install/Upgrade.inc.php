@@ -151,9 +151,9 @@ class Upgrade extends Installer {
 			if ($commentsToEd != ''){
 				$userId = null;
 				$authorAssignments = $stageAssignmentDao->getBySubmissionAndRoleId($row->submission_id, ROLE_ID_AUTHOR);
-				if ($authorAssignments->getCount() != 0) {
+				if ($authorAssignment = $authorAssignments->next()) {
 					// We assume the results are ordered by stage_assignment_id i.e. first author assignment is first
-					$userId = $authorAssignments->next()->getUserId();
+					$userId = $authorAssignment->getUserId();
 				} else {
 					$managerUserGroup = $userGroupDao->getDefaultByRoleId($row->context_id, ROLE_ID_MANAGER);
 					$managerUsers = $userGroupDao->getUsersById($managerUserGroup->getId(), $row->context_id);
@@ -729,7 +729,7 @@ class Upgrade extends Installer {
 
 		$rows = Capsule::table('submission_supplementary_files as ssf')
 			->leftJoin('submission_files as sf', 'sf.file_id', '=', 'ssf.file_id')
-			->leftJoin('submission as s', 's.submission_id', '=', 'sf.submission_id')
+			->leftJoin('submissions as s', 's.submission_id', '=', 'sf.submission_id')
 			->where('sf.file_stage', '=', SUBMISSION_FILE_SUBMISSION)
 			->where('sf.assoc_type', '=', ASSOC_TYPE_REPRESENTATION)
 			->where('sf.revision', '=', 'ssf.revision')
@@ -1035,7 +1035,7 @@ class Upgrade extends Installer {
 		// Fetch submission_file data with old-supp-id
 		$result = $submissionFileDao->retrieve(
 			'SELECT * FROM submission_file_settings WHERE setting_name =  ?',
-			'old-supp-id'
+			['old-supp-id']
 		);
 		// Loop through the data and save to temp table
 		foreach ($result as $row) {
