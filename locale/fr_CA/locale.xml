@@ -813,16 +813,13 @@ le droit de première publication, avec l'ouvrage disponible simultanément [SP�
 	<message key="payment.type.donation">Dons</message>
 	<message key="payment.requestPublicationFee">Demande de frais de publication ({$feeAmount})</message>
 	<message key="payment.notFound">La demande de paiement est expirée. Veuillez communiquer avec un-e responsable de la revue pour plus d'information.</message>
-	
 	<message key="payment.donation.makeDonation">Faire un don</message>
-	
 	<message key="payment.submission.paySubmission">Payer les frais de soumission</message>
 	<message key="payment.publication.payPublication">Payer pour publier</message>
 	<message key="payment.publication.publicationPaid">Frais de publication payés</message>
 	<message key="payment.membership.buyMembership">Acheter une adhésion individuelle</message>
 	<message key="payment.membership.renewMembership">Renouveler une adhésion individuelle</message>
 	<message key="payment.membership.ends">Se termine</message>
-	
 	<message key="payment.subscription.purchase">Souscrire à un abonnement</message>
 	<message key="payment.subscription.renew">Renouveler l'abonnement</message>
 	<message key="payment.subscription.expires">Expire</message>
@@ -902,7 +899,6 @@ Actuellement, votre serveur prend en charge mbstring : <strong>{$supportsMBStrin
 	<!-- Installation upgrade warnings -->
 	<message key="site.upgradeAvailable.admin"><![CDATA[Une nouvelle version d'OJS est maintenant disponible! Vous utilisez actuellement OJS {$currentVersion}. La dernière version est OJS {$latestVersion}. Allez à <a href="http://pkp.sfu.ca/ojs_download" target="_new">cette page</a> pour télécharger la dernière version d'OJS et voir les instructions concernant la mise à jour.]]></message>
 	<message key="site.upgradeAvailable.manager"><![CDATA[Une nouvelle version d'OJS est maintenant disponible! Vous utilisez actuellement OJS {$currentVersion}. La dernière version est OJS {$latestVersion}. Contactez votre administrateur-trice de site ({$siteAdminName}, <a href="mailto:{$siteAdminEmail}">{$siteAdminEmail}</a>) pour lui signaler cette nouvelle version. Plus d'information est disponible <a href="http://pkp.sfu.ca/ojs_download" target="_new">ici</a>.]]></message>
-	
 	<!-- Article Logs -->
 	<message key="log.author.documentRevised">{$authorName} a révisé l'article {$submissionId}. Le nouvel identifiant (ID) du fichier est {$fileId}.</message>
 	<message key="log.review.reviewerUnassigned">{$reviewerName} n'a pas été assigné-e à l'évaluation de la soumission {$submissionId} pour le cycle d'évaluation {$round}.</message>
@@ -918,12 +914,10 @@ Actuellement, votre serveur prend en charge mbstring : <strong>{$supportsMBStrin
 	<message key="log.review.reviewAccepted">{$reviewerName} a accepté le cycle {$round} d'évaluation de la soumission {$submissionId}.</message>
 	<message key="log.review.reviewDeclinedByProxy">{$userName} a refusé le cycle {$round} d'évaluation pour la soumission {$submissionId} au nom de {$reviewerName}.</message>
 	<message key="log.review.reviewAcceptedByProxy">{$userName} a accepté le cycle {$round} d'évaluation de la soumission {$submissionId} au nom de {$reviewerName}.</message>
-	<message key="log.review.reviewFileByProxy">Le,La rédacteur-trice, {$userName}, a téléversé le fichier d'évaluation pour le cycle {$round} de la soumission {$submissionId} au nom de l'évaluateur-trice, {$reviewerName}.</message>
+	<message key="log.review.reviewFileByProxy">Le,La rédacteur-trice, {$userName}, a téléversé le fichier à évaluer pour le cycle {$round} de la soumission {$submissionId} au nom de l'évaluateur-trice, {$reviewerName}.</message>
 	<message key="log.review.reviewerFile">Le fichier d'un-e évaluateur-trice a été téléversé.</message>
 	<message key="log.editor.decision">Une décision du,de la rédacteur-trice ({$decision}) pour l'article {$submissionId} a été enregistré par {$editorName}.</message>
 	<message key="log.editor.recommendation">Une recommandation éditoriale ({$decision}) pour l'article {$submissionId} a été enregistrée par {$editorName}.</message>
-	
-	
 	<message key="log.copyedit.initiate">La révision de la soumission {$submissionId} a été entamée par {$copyeditorName}.</message>
 	<message key="log.copyedit.copyeditFileSet">Le fichier de révision par défaut a été sélectionné.</message>
 	<message key="log.copyedit.initialEditComplete">{$copyeditorName} a terminé la révision initiale de la soumission {$submissionId}.</message>
@@ -1009,11 +1003,14 @@ La validation peut échouer sur les URL de recherche qui nécessitent des formul
 	<message key="notification.type.submissions">Événements de soumission</message>
 	<message key="notification.type.userComment">Un-e lecteur-trice a fait un commentaire sur « {$title} »</message>
 	<message key="notification.type.public">Annonces publiques</message>
+	<message key="notification.type.editorialReport">Résumé du rapport de statistiques.</message>
 	<message key="notification.savedIssueMetadata">Métadonnées du numéro sauvegardées.</message>
 	<message key="notification.type.editorAssignmentTask">Un nouvel article a été soumis. Un-e rédacteur-trice doit lui être assigné.</message>
-<message key="notification.type.assignProductionUser">Assigner un-e utilisateur-trice à la création des épreuves en utilisant le lien « Assigner » dans la liste des participants.</message>
+	<message key="notification.type.assignProductionUser">Assigner un-e utilisateur-trice à la création des épreuves en utilisant le lien « Assigner » dans la liste des participants.</message>
 	<message key="notification.type.awaitingRepresentations">Épreuves en attente.</message>
 	<message key="notification.type.publicationScheduled">La publication de cet article a été planifiée.</message>
+	<message key="notification.type.editorialReport.contents">Ceci est un rappel amical pour vous inciter à vérifier la bonne marche de votre revue via le rapport éditorial.</message>
+
 	<!--
 	 *
 	 * MISC - Entries that do not belong in the other sections.
@@ -1031,15 +1028,12 @@ La validation peut échouer sur les URL de recherche qui nécessitent des formul
 	<message key="debug.notes.currencyListLoad">Liste des devises « {$filename} » chargée à partir du XML</message>
 	<!-- Grid Actions -->
 	<message key="grid.action.createContext">Créer une nouvelle revue</message>
-	
 	<!-- Included here because it may be used in the navigation bar -->
 	<message key="editor.navigation.issues">Numéros</message>
 	<message key="notification.type.approveSubmission">Cette soumission est présentement en attente d'approbation avant sa parution dans le numéro.</message>
 	<message key="notification.type.approveSubmissionTitle">En attente d'approbation.</message>
-	
 	<message key="user.profile.form.showOtherContexts">S'enregistrer auprès d'autres revues</message>
 	<message key="user.profile.form.hideOtherContexts">Masquer les autres revues</message>
-	
 	<message key="article.view.interstitial">Choisir un fichier d'article à télécharger.</message>
 	<message key="grid.catalogEntry.availableRepresentation.approved">Approuvé-e</message>
 	<message key="grid.catalogEntry.availableRepresentation.notApproved">En attente d'approbation</message>
@@ -1049,7 +1043,6 @@ La validation peut échouer sur les URL de recherche qui nécessitent des formul
 	<message key="search.cli.rebuildIndex.indexing">Indexation de « {$journalName} »</message>
 	<message key="search.cli.rebuildIndex.indexingByJournalNotSupported">Cette implémentation de recherche ne permet pas la réindexation par revue.</message>
 	<message key="search.cli.rebuildIndex.unknownJournal">Le chemin d'accès spécifié, soit « {$journalPath} », ne mène à aucune revue.</message>
-	
 	<message key="editor.issues.backIssues">Numéros précédents</message>
 	<message key="editor.issues.futureIssues">Numéros à venir</message>
 	<message key="navigation.subscriptions">Abonnements</message>

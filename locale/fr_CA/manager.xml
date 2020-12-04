@@ -540,7 +540,6 @@ Il y a des cas où une statistique d'utilisation unique doit être utilisée, pa
 	<message key="manager.subscriptionTypes.noneCreated">Aucun type d'abonnement n'a été créé.</message>
 	<message key="manager.subscriptionTypes.subscriptionTypeCreatedSuccessfully">Création du type d'abonnement réussie.</message>
 	<message key="manager.distribution.access">Accès</message>
-	
 	<!-- Navigation Menu Items -->
 	<message key="manager.navigationMenus.subscriptions.description">Lien vers la page décrivant les abonnements offerts.</message>
 	<message key="manager.navigationMenus.mySubscriptions.description">Lien vers la page décrivant les abonnements courants et échus de l'utilisateur-trice.</message>

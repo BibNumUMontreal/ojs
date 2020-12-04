@@ -71,7 +71,6 @@
 	<message key="submission.metadataDescription">Ces spécifications sont basées sur le schéma de métadonnées du Dublin Core, une norme internationale utilisée pour décrire les contenus d'une revue.</message>
 	<message key="section.any">Toute rubrique</message>
 	<!-- categories -->
-
 	<message key="catalog.browseTitles">{$numTitles} titres</message>
 	<message key="catalog.category.heading">Tous les titres</message>
 </locale>

@@ -48,7 +48,7 @@ Mot de passe : {$password}<br />
 		<subject>Inscription à la revue</subject>
 		<body><![CDATA[{$userFullName},<br />
 <br />
-Vous êtes désormais inscrit-e en tant qu'utilisateur-trice pour {$contextName}. Votre nom d'utilisateur-trice et votre mot de passe figurent dans ce courriel, lesquels sont requis pour toute interaction avec la revue via son site Web. À n'importe quel moment, vous pouvez demander à être retiré-e de la liste des utilisateurs-trices de la revue en nous contactant.<br />
+Vous êtes désormais inscrit-e en tant qu'utilisateur-trice pour la revue {$contextName}. Votre nom d'utilisateur-trice et votre mot de passe figurent dans ce courriel, lesquels sont requis pour toute interaction avec la revue via son site Web. À n'importe quel moment, vous pouvez demander à être retiré-e de la liste des utilisateurs-trices de la revue en nous contactant.<br />
 <br />
 Nom d'utilisateur-trice : {$username}<br />
 Mot de passe : {$password}<br />
@@ -61,7 +61,7 @@ Merci,<br />
 		<subject>Valider votre compte</subject>
 		<body><![CDATA[{$userFullName},<br />
 <br />
-Vous avez créé un compte avec {$contextName}. Pour pouvoir commencer à l'utiliser vous devez d'abord valider votre compte de courriel. Pour ce faire, vous n'avez qu'à suivre le lien ci-dessous :<br />
+Vous avez créé un compte pour la revue {$contextName}. Pour pouvoir commencer à l'utiliser il nous faut d'abord valider votre adresse de courriel. Pour ce faire, vous n'avez qu'à suivre le lien ci-dessous :<br />
 <br />
 {$activateUrl}<br />
 <br />
@@ -70,8 +70,8 @@ Merci,<br />
 		<description>Ce courriel est envoyé à un,une utilisateur-trice nouvellement inscrit-e pour valider son compte de courriel.</description>
 	</email_text>
 	<email_text key="REVIEWER_REGISTER">
-		<subject>Inscription en tant qu'évaluateur-trice pour {$contextName}</subject>
-		<body><![CDATA[Compte tenu de votre expertise, nous avons pris l'initiative d'inscrire votre nom dans la base de données des évaluateurs-trices de {$contextName}. Cela ne vous engage d'aucune façon, mais nous permet simplement de solliciter vos services pour l'évaluation d'une soumission. Si vous êtes invité-e à effectuer une évaluation, vous recevrez le titre et le résumé de l'article en question, et serez toujours libre d'accepter ou de refuser une telle invitation. À tout moment, il vous est également possible de demander à ce que votre nom soit retiré de la liste des évaluateurs-trices.<br />
+		<subject>Inscription en tant qu'évaluateur-trice pour la revue {$contextName}</subject>
+		<body><![CDATA[Compte tenu de votre expertise, nous avons pris l'initiative d'inscrire votre nom dans la base de données des évaluateurs-trices de la revue {$contextName}. Cela ne vous engage d'aucune façon, mais nous permet simplement de solliciter vos services pour l'évaluation d'une soumission. Si vous êtes invité-e à effectuer une évaluation, vous recevrez le titre et le résumé de l'article en question, et serez toujours libre d'accepter ou de refuser une telle invitation. À tout moment, il vous est également possible de demander à ce que votre nom soit retiré de la liste des évaluateurs-trices.<br />
 <br />
 Nous vous acheminons un nom d'utilisateur-trice et un mot de passe, car tous deux sont requis pour tout échange avec la revue via son site Web. Vous pouvez, par exemple, si vous le souhaitez, effectuer la mise à jour de votre profil, y compris vos domaines d'intérêt en matière d'évaluation.<br />
 <br />
@@ -86,14 +86,14 @@ Merci,<br />
 		<subject>Parution du dernier numéro</subject>
 		<body><![CDATA[Lecteurs-trices,<br />
 <br />
-Le plus récent numéro de {$contextName} vient d'être publié à l'adresse suivante : {$contextUrl}. Nous vous invitons à consulter le sommaire, puis à visiter notre site Web pour y lire les articles qui vous intéressent.<br />
+Le plus récent numéro de la revue {$contextName} vient d'être publié à l'adresse suivante : {$contextUrl}. Nous vous invitons à consulter le sommaire, puis à visiter notre site Web pour y lire les articles qui vous intéressent.<br />
 <br />
 Nous vous remercions de l'intérêt que vous portez à notre revue,<br />
 {$editorialContactSignature}]]></body>
 		<description><![CDATA[Ce courriel est envoyé à tous et toutes les lecteurs-trices inscrits-es, via le lien « Aviser les utilisateurs-trices » sur la page d'accueil du rédacteur. Il avise les lecteurs-trices qu'un nouveau numéro est publié et les invite à visiter la revue en cliquant sur le URL fourni.]]></description>
 	</email_text>
 	<email_text key="LOCKSS_EXISTING_ARCHIVE">
-		<subject>Demande d'archivage pour {$contextName}</subject>
+		<subject>Demande d'archivage pour la revue {$contextName}</subject>
 		<body><![CDATA[Cher,Chère [Bibliothécaire universitaire],<br />
 <br />
 {$contextName} &lt;{$contextUrl}&gt; est une revue pour laquelle un membre de votre faculté, [nom du membre], agit à titre de [titre de la position occupée]. La revue désire mettre en place un système d'archivage conforme LOCKSS (Lots of Copies Keep Stuff Safe - Plusieurs exemplaires assurent la sécurité) avec votre bibliothèque ainsi que celles d'autres universités.<br />
@@ -109,7 +109,7 @@ Merci,<br />
 		<description>Ce courriel demande à un-e conservateur,trice d'archives LOCKSS d'envisager d'inclure cette revue dans leur archive. Il fournit l'adresse URL du LOCKSS Publisher Manifest de la revue.</description>
 	</email_text>
 	<email_text key="LOCKSS_NEW_ARCHIVE">
-		<subject>Demande d'archivage pour {$contextName}</subject>
+		<subject>Demande d'archivage pour la revue {$contextName}</subject>
 		<body><![CDATA[Cher,Chère [Bibliothécaire universitaire],<br />
 <br />
 {$contextName} &lt;{$contextUrl}&gt;, est une revue pour laquelle un membre de votre faculté, [nom du membre], agit à titre de [titre de la fonction occupée]. La revue désire mettre en place un système d'archivage conforme LOCKSS (Lots of Copies Keep Stuff Safe) avec votre bibliothèque et celles d'autres universités.<br />
@@ -142,9 +142,9 @@ Si vous avez des questions, n'hésitez pas à communiquer avec nous. Nous vous r
 		<subject>Accusé de réception de la soumission</subject>
 		<body><![CDATA[Bonjour,<br />
 <br />
-Le manuscrit intitulé , « {$submissionTitle} » , a été soumis par {$submitterName} à {$contextName}.<br />
+Le manuscrit intitulé , « {$submissionTitle} » , a été soumis par {$submitterName} à la revue {$contextName}.<br />
 <br />
-Si vous avez des questions, n'hésitez pas à communiquer avec nous. Nous vous remercions d'avoir pensé à {$contextName} pour la publication de vos travaux.<br />
+Si vous avez des questions, n'hésitez pas à communiquer avec nous. Nous vous remercions d'avoir pensé à la revue {$contextName} pour la publication de vos travaux.<br />
 <br />
 {$editorialContactSignature}]]></body>
 		<description>Ce courriel, lorsque activé, est envoyé automatiquement aux autres auteur-e-s qui ne sont pas des utilisateurs-trices de OJS signalés-es comme effectuant la soumission.</description>
@@ -188,7 +188,7 @@ Nous vous remercions de l'attention que vous porterez à notre demande.<br />
 	<email_text key="REVIEW_REQUEST_REMIND_AUTO">
 		<subject>Demande d'évaluation d'un article</subject>
 		<body><![CDATA[{$reviewerName},<br />
-Ceci est un petit rappel concernant notre demande d'évaluation de « {$submissionTitle} » pour {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, une réponse avant le {$responseDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai.
+Ceci est un petit rappel concernant notre demande d'évaluation de « {$submissionTitle} » pour la revue {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, une réponse avant le {$responseDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai.
 <br />
 Nous pensons que vous seriez un-e excellent-e évaluateur-trice pour le manuscrit. Vous trouverez un résumé de la soumission ci-dessous. Nous espérons que vous envisagerez d'entreprendre cette tâche essentielle à la publication de la revue.<br />
 <br />
@@ -233,7 +233,7 @@ Nous vous remercions de l'attention que vous porterez à notre demande.<br />
 	<email_text key="REVIEW_REQUEST_REMIND_AUTO_ONECLICK">
 		<subject>Demande d'évaluation d'un article</subject>
 		<body><![CDATA[{$reviewerName},<br />
-Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, une réponse avant le {$responseDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai.
+Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour la revue {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, une réponse avant le {$responseDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai.
 <br />
 Nous pensons que vous seriez un-e excellent-e évaluateur-trice pour le manuscrit. Vous trouverez un résumé de la soumission ci-dessous. Nous espérons que vous envisagerez d'entreprendre cette tâche essentielle à la publication de la revue.<br />
 <br />
@@ -275,7 +275,7 @@ Directives pour l'évaluation<br />
 		<subject>Demande d'évaluation d'un article</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci concerne le manuscrit « {$submissionTitle} », qui est présentement évalué par {$contextName}.<br />
+Ceci concerne le manuscrit « {$submissionTitle} », qui est présentement évalué par la revue {$contextName}.<br />
 <br />
 Suivant l'évaluation de la dernière version du manuscrit, l'auteur a soumis une version révisée de son document. Nous apprécierions que vous évaluiez cette nouvelle version.<br />
 <br />
@@ -300,7 +300,7 @@ Nous vous remercions de l'attention que vous porterez à notre demande.<br />
 		<subject>Demande d'évaluation d'un article</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci concerne le manuscrit « {$submissionTitle} », qui est présentement évalué par {$contextName}.<br />
+Ceci concerne le manuscrit « {$submissionTitle} », qui est présentement évalué par la revue {$contextName}.<br />
 <br />
 Suivant l'évaluation de la dernière version du manuscrit, l'auteur a soumis une version révisée de son document. Nous apprécierions que vous évaluiez cette nouvelle version.<br />
 <br />
@@ -323,7 +323,7 @@ Nous vous remercions de l'attention que vous porterez à notre demande.<br />
 		<subject>Demande d'évaluation d'un article</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci concerne le manuscrit « {$submissionTitle} », qui est présentement évalué par {$contextName}.<br />
+Ceci concerne le manuscrit « {$submissionTitle} », qui est présentement évalué par la revue{$contextName}.<br />
 <br />
 Suivant l'évaluation de la dernière version du manuscrit, l'auteur a soumis une version révisée de son document. Nous apprécierions que vous évaluiez cette nouvelle version.<br />
 <br />
@@ -344,7 +344,7 @@ Directives pour l'évaluation<br />
 		<subject>Annulation de la demande d'évaluation</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Nous avons décidé d'annuler notre demande concernant l'évaluation du manuscrit intitulé « {$submissionTitle} » pour {$contextName}. Nous sommes désolés des inconvénients que cela pourrait vous causer et espérons que nous pourrons de nouveau faire appel à vous pour contribuer au processus de révision par les pairs de cette revue dans le futur.<br />
+Nous avons décidé d'annuler notre demande concernant l'évaluation du manuscrit intitulé « {$submissionTitle} » pour la revue {$contextName}. Nous sommes désolés des inconvénients que cela pourrait vous causer et espérons que nous pourrons de nouveau faire appel à vous pour contribuer au processus de révision par les pairs de cette revue dans le futur.<br />
 <br />
 Si vous avez des questions, n'hésitez pas à communiquer avec nous.<br />
 <br />
@@ -364,7 +364,7 @@ Je suis en mesure d'évaluer la soumission intitulée « {$submissionTitle} » p
 		<subject>Refus d'évaluation</subject>
 		<body><![CDATA[Rédacteurs-trices,<br />
 <br />
-Pour le moment, il m'est impossible d'évaluer la soumission intitulée « {$submissionTitle} » pour {$contextName}. Je vous remercie d'avoir pensé à moi. N'hésitez pas à communiquer avec moi pour un autre projet.<br />
+Pour le moment, il m'est impossible d'évaluer la soumission intitulée « {$submissionTitle} » pour la revue {$contextName}. Je vous remercie d'avoir pensé à moi. N'hésitez pas à communiquer avec moi pour un autre projet.<br />
 <br />
 {$reviewerName}]]></body>
 	<description>Ce courriel est envoyé par l'évaluateur-trice au,à la rédacteur-trice de rubrique en réponse à la demande d'évaluation, pour l'aviser qu'il ou elle ne peut effectuer l'évaluation.</description>
@@ -373,7 +373,7 @@ Pour le moment, il m'est impossible d'évaluer la soumission intitulée « {$sub
 		<subject>Accusé de réception de l'évaluation d'une soumission</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Nous vous remercions d'avoir évalué la soumission intitulée « {$submissionTitle} » pour {$contextName}. Nous vous sommes reconnaissants de votre contribution à la qualité des travaux que nous publions.<br />
+Nous vous remercions d'avoir évalué la soumission intitulée « {$submissionTitle} » pour la revue {$contextName}. Nous vous sommes reconnaissants de votre contribution à la qualité des travaux que nous publions.<br />
 <br />
 {$editorialContactSignature}]]></body>
 		<description>Ce courriel est envoyé par le,la rédacteur-trice de rubrique, pour accuser réception d'une évaluation terminée et remercier l'évaluateur-trice de sa contribution.</description>
@@ -382,7 +382,7 @@ Nous vous remercions d'avoir évalué la soumission intitulée « {$submissionTi
 		<subject>Rappel d'évaluation d'une soumission</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour {$contextName}. Nous espérions recevoir votre évaluation avant le {$reviewDueDate}. Nous serions heureux de la recevoir dès que possible.<br />
+Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour la revue {$contextName}. Nous espérions recevoir votre évaluation avant le {$reviewDueDate}. Nous serions heureux de la recevoir dès que possible.<br />
 <br />
 Si vous n'avez pas vos nom d'utilisateur-trice et mot de passe pour le site de la revue, vous pouvez utiliser le lien suivant pour réinitialiser votre mot de passe (lequel vous sera envoyé par courriel avec votre nom d'utilisateur-trice). {$passwordResetUrl}<br />
 <br />
@@ -397,7 +397,7 @@ Veuillez confirmer que vous êtes en mesure d'effectuer ce travail essentiel pou
 		<subject>Rappel d'évaluation d'une soumission</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour {$contextName}. Nous espérions recevoir votre évaluation avant le {$reviewDueDate}. Nous serions heureux de la recevoir dès que possible.<br />
+Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour la revue {$contextName}. Nous espérions recevoir votre évaluation avant le {$reviewDueDate}. Nous serions heureux de la recevoir dès que possible.<br />
 <br />
 URL de la soumission : {$submissionReviewUrl}<br />
 <br />
@@ -410,7 +410,7 @@ Veuillez confirmer que vous êtes en mesure d'effectuer ce travail essentiel pou
 		<subject>Rappel automatique d'évaluation d'une soumission</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, votre évaluation avant le {$reviewDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai. Nous serions toutefois heureux de recevoir votre évaluation dès que possible.<br />
+Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour la revue {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, votre évaluation avant le {$reviewDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai. Nous serions toutefois heureux de recevoir votre évaluation dès que possible.<br />
 <br />
 Si vous n'avez pas vos nom d'utilisateur-trice et mot de passe pour le site de la revue, vous pouvez utiliser le lien suivant pour réinitialiser votre mot de passe (lequel vous sera envoyé par courriel avec votre nom d'utilisateur-trice). {$passwordResetUrl}<br />
 <br />
@@ -425,7 +425,7 @@ Veuillez confirmer que vous êtes en mesure d'effectuer ce travail essentiel pou
 		<subject>Rappel automatique d'évaluation d'une soumission</subject>
 		<body><![CDATA[{$reviewerName},<br />
 <br />
-Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, votre évaluation avant le {$reviewDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai. Nous serions toutefois heureux de recevoir votre évaluation dès que possible.<br />
+Ceci est un petit rappel concernant notre demande d'évaluation de la soumission « {$submissionTitle} » pour la revue {$contextName}. Puisque nous n'avons pas reçu, comme nous l'espérions, votre évaluation avant le {$reviewDueDate}, ce courriel a été généré et envoyé automatiquement après l'échéance du délai. Nous serions toutefois heureux de recevoir votre évaluation dès que possible.<br />
 <br />
 URL de la soumission : {$submissionReviewUrl}<br />
 <br />
@@ -438,7 +438,7 @@ Veuillez confirmer que vous êtes en mesure d'effectuer ce travail essentiel pou
 		<subject>Décision du rédacteur</subject>
 		<body><![CDATA[{$authorName},<br />
 <br />
-Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à {$contextName}.<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
 <br />
 Notre décision est d'accepter la soumission.<br />
 <br />
@@ -449,7 +449,7 @@ Notre décision est d'accepter la soumission.<br />
 		<subject>Décision du rédacteur</subject>
 		<body><![CDATA[{$authorName},<br />
 <br />
-Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à {$contextName}.<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
 <br />
 Notre décision est d'envoyer votre soumission en évaluation.<br />
 <br />
@@ -475,7 +475,7 @@ URL de la soumission : {$submissionUrl}<br />
 		<subject>Décision du rédacteur</subject>
 		<body><![CDATA[{$authorName},<br />
 <br />
-Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à {$contextName}.<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
 <br />
 Notre décision est de demander d'apporter des révisions à votre soumission.<br />
 <br />
@@ -486,7 +486,7 @@ Notre décision est de demander d'apporter des révisions à votre soumission.<b
 		<subject>Décision du rédacteur</subject>
 		<body><![CDATA[{$authorName},<br />
 <br />
-Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à {$contextName}.<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
 <br />
 Notre décision est de demander d'apporter des révisions à votre soumission et de la soumettre à nouveau.<br />
 <br />
@@ -497,7 +497,7 @@ Notre décision est de demander d'apporter des révisions à votre soumission et
 		<subject>Décision du rédacteur</subject>
 		<body><![CDATA[{$authorName}:<br />
 <br />
-Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à {$contextName}.<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
 <br />
 Notre décision est de refuser votre soumission.<br />
 <br />
@@ -508,7 +508,7 @@ Notre décision est de refuser votre soumission.<br />
 		<subject>Recommandation du rédacteur</subject>
 		<body><![CDATA[{$editors},<br />
 <br />
-La recommandation concernant la soumission « {$submissionTitle} » à {$contextName} est de : {$recommendation}<br />
+La recommandation concernant la soumission « {$submissionTitle} » à la revue {$contextName} est de : {$recommendation}<br />
 <br />
 {$editorialContactSignature}<br />]]></body>
 		<description>Ce courriel envoyé par le,la rédacteur-trice ou le,la rédacteur-trice de rubrique en charge de la recommandation au,à la rédacteur-trice ou au,à la rédacteur-trice de rubrique en charge de la prise de décisions l'informe d'une recommandation finale concernant la soumission.</description>
@@ -517,13 +517,13 @@ La recommandation concernant la soumission « {$submissionTitle} » à {$context
 		<subject>Demande de révision d'une soumission</subject>
 		<body><![CDATA[{$participantName},<br />
 <br />
-J'aimerais que vous effectuiez la révision du manuscrit intitulé « {$submissionTitle} » pour {$contextName} à l'aide des étapes suivantes.<br />
+J'aimerais que vous effectuiez la révision du manuscrit intitulé « {$submissionTitle} » pour la revue {$contextName} à l'aide des étapes suivantes.<br />
 1. Cliquer sur l'URL de la soumission ci-dessous.<br />
 2. Ouvrir le(s) fichier(s) disponible(s) sous Fichiers des ébauches finales et effectuer votre révision, tout en ajoutant des discussions sur la révision, le cas échéant.<br />
 3. Enregistrer le(s) fichier(s) révisé(s) et le(s) téléverser dans la section Version(s) révisée(s).<br />
 4. Informer le,la rédacteur-trice que tous les fichiers ont été révisés et que l'étape de production peut débuter.<br />
 <br />
-URL de {$contextName} : {$contextUrl}<br />
+URL de la revue {$contextName} : {$contextUrl}<br />
 URL de la soumission : {$submissionUrl}<br />
 Nom d'utilisateur-trice : {$participantUsername}<br />
 <br />
@@ -534,13 +534,13 @@ Nom d'utilisateur-trice : {$participantUsername}<br />
 		<subject>Demande de mise en page des épreuves</subject>
 		<body><![CDATA[{$participantName},<br />
 <br />
-J'aimerais que vous prépariez les épreuves du manuscrit intitulé « {$submissionTitle} » pour {$contextName} à l'aide des étapes suivantes.<br />
+J'aimerais que vous prépariez les épreuves du manuscrit intitulé « {$submissionTitle} » pour la revue {$contextName} à l'aide des étapes suivantes.<br />
 1. Cliquer sur l'URL de la soumission ci-dessous.<br />
 2. Se connecter au site Web de la revue et utiliser les fichiers disponibles sous Fichiers prêts pour la production pour créer les épreuves en fonction des normes de la revue.<br />
 3. Téléverser les épreuves dans la section Épreuves.<br />
 4. Informer le,la rédacteur-trice, via une discussion sur la production, que les épreuves ont été téléversées et qu'elles sont prêtes.<br />
 <br />
-URL de {$contextName} : {$contextUrl}<br />
+URL de la revue {$contextName} : {$contextUrl}<br />
 URL du manuscrit : {$submissionLayoutUrl}<br />
 Nom d'utilisateur-trice : {$participantUsername}<br />
 <br />
@@ -553,7 +553,7 @@ Si vous ne pouvez pas effectuer ce travail pour le moment ou si vous avez des qu
 		<subject>Mise en page des épreuves terminée</subject>
 		<body><![CDATA[{$editorialContactName},<br />
 <br />
-Les épreuves du manuscrit intitulé « {$submissionTitle} » pour {$contextName} sont maintenant prêtes pour la relecture.<br />
+Les épreuves du manuscrit intitulé « {$submissionTitle} » pour la revue {$contextName} sont maintenant prêtes pour la relecture.<br />
 <br />
 Si vous avez des questions, n'hésitez pas à communiquer avec moi.<br />
 <br />
@@ -569,7 +569,7 @@ Si vous avez des questions, n'hésitez pas à communiquer avec moi.<br />
 		<subject>Avis d'abonnement</subject>
 		<body><![CDATA[{$subscriberName},<br />
 <br />
-Vous êtes maintenant abonné-e à notre système de gestion de revue en ligne pour {$contextName}, avec le type d'abonnement suivant  :<br />
+Vous êtes maintenant abonné-e à notre système de gestion de revue en ligne pour la revue {$contextName}, avec le type d'abonnement suivant  :<br />
 <br />
 {$subscriptionType}<br />
 <br />
@@ -588,7 +588,7 @@ Si vous avez des questions, n'hésitez pas à communiquer avec nous.<br />
 		<subject>Le numéro est maintenant en libre accès</subject>
 		<body><![CDATA[Chers lecteurs et lectrices,<br />
 <br />
-{$contextName} vient de rendre disponible en libre accès le numéro suivant. Nous vous invitons à lire ici le sommaire puis visiter notre site Web ({$contextUrl}) pour lire les articles et autres textes qui pourraient vous intéresser.<br />
+La revue {$contextName} vient de rendre disponible en libre accès le numéro suivant. Nous vous invitons à lire ici le sommaire puis visiter notre site Web ({$contextUrl}) pour lire les articles et autres textes qui pourraient vous intéresser.<br />
 <br />
 Merci de votre intérêt continu pour notre travail,<br />
 {$editorialContactSignature}]]></body>
@@ -598,7 +598,7 @@ Merci de votre intérêt continu pour notre travail,<br />
 		<subject>Avis d'expiration de l'abonnement</subject>
 		<body><![CDATA[{$subscriberName},<br />
 <br />
-Votre abonnement à {$contextName} expirera bientôt.<br />
+Votre abonnement à la revue {$contextName} expirera bientôt.<br />
 <br />
 {$subscriptionType}<br />
 Date d'expiration : {$expiryDate}<br />
@@ -614,7 +614,7 @@ Si vous avez des questions, ne pas hésiter à communiquer avec nous.<br />
 		<subject>Abonnement expiré</subject>
 		<body><![CDATA[{$subscriberName},<br />
 <br />
-Votre abonnement à la revue {$contextName} est expiré.<br />
+Votre abonnement à la revue la revue {$contextName} est expiré.<br />
 <br />
 {$subscriptionType}<br />
 Date d'expiration : {$expiryDate}<br />
@@ -644,7 +644,7 @@ Si vous avez des questions, ne hésitez pas à communiquer avec nous.<br />
 	</email_text>
 	<email_text key="SUBSCRIPTION_PURCHASE_INDL">
 		<subject>Souscription à un abonnement individuel</subject>
-		<body><![CDATA[Une souscription en ligne à un abonnement individuel pour {$contextName} avec les renseignements suivants :<br />
+		<body><![CDATA[Une souscription en ligne à un abonnement individuel pour la revue {$contextName} avec les renseignements suivants :<br />
 <br />
 Type d'abonnement :<br />
 {$subscriptionType}<br />
@@ -662,7 +662,7 @@ URL d'abonnement : {$subscriptionUrl}]]></body>
 	</email_text>
 	<email_text key="SUBSCRIPTION_PURCHASE_INSTL">
 		<subject>Souscription à un abonnement institutionnel</subject>
-		<body><![CDATA[Souscription en ligne à un abonnement institutionnel pour {$contextName} avec les renseignements suivants. Pour activer cet abonnement, veuillez utiliser l'URL d'abonnement fourni et fixer le statut de l'abonnement à « actif ».<br />
+		<body><![CDATA[Souscription en ligne à un abonnement institutionnel pour la revue {$contextName} avec les renseignements suivants. Pour activer cet abonnement, veuillez utiliser l'URL d'abonnement fourni et fixer le statut de l'abonnement à « actif ».<br />
 <br />
 Type d'abonnement :<br />
 {$subscriptionType}<br />
@@ -689,7 +689,7 @@ URL de l'abonnement : {$subscriptionUrl}]]></body>
 	</email_text>
 	<email_text key="SUBSCRIPTION_RENEW_INDL">
 		<subject>Renouvellement d'abonnement individuel</subject>
-		<body><![CDATA[Un abonnement individuel a été renouvelé en ligne pour {$contextName} avec les renseignements suivants.<br />
+		<body><![CDATA[Un abonnement individuel a été renouvelé en ligne pour la revue {$contextName} avec les renseignements suivants.<br />
 <br />
 Type d'abonnement :<br />
 {$subscriptionType}<br />
@@ -706,7 +706,7 @@ URL de l'abonnement : {$subscriptionUrl}]]></body>
 	</email_text>
 	<email_text key="SUBSCRIPTION_RENEW_INSTL">
 		<subject>Renouvellement d'abonnement institutionnel</subject>
-		<body><![CDATA[Un abonnement institutionnel a été renouvelé en ligne pour {$contextName} avec les renseignements suivants.<br />
+		<body><![CDATA[Un abonnement institutionnel a été renouvelé en ligne pour la revue {$contextName} avec les renseignements suivants.<br />
 <br />
 Type d'abonnement :<br />
 {$subscriptionType}<br />
@@ -742,7 +742,7 @@ Pourriez-vous vérifier ou nous fournir la référence bibliographique complète
 Merci!<br />
 <br />
 {$userFirstName}<br />
-Réviseur-e, {$contextName}]]></body>
+Réviseur-e, revue {$contextName}]]></body>
 	</email_text>
 	<email_text key="REVISED_VERSION_NOTIFY">
 		<subject>Version révisée téléversée</subject>
@@ -756,7 +756,7 @@ URL de la soumission : {$submissionUrl}<br />
 	<description>Ce courriel est envoyé automatiquement au,à la rédacteur-trice assigné-e quand un-e auteur-e téléverse une version révisée d'un article</description>
 	</email_text>
 	<email_text key="NOTIFICATION_CENTER_DEFAULT">
-		<subject>Un message à propos de {$contextName}</subject>
+		<subject>Un message à propos de la revue {$contextName}</subject>
 		<body><![CDATA[Prière de saisir votre message.]]></body>
 		<description>Message blanc par défaut utilisé pour concevoir d'autres messages.</description>
 	</email_text>
@@ -764,7 +764,7 @@ URL de la soumission : {$submissionUrl}<br />
 		<subject>Décision du rédacteur</subject>
 		<body><![CDATA[{$authorName},<br />
 <br />
-Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à {$contextName}.<br />
+Nous avons pris une décision concernant votre soumission « {$submissionTitle} » à la revue {$contextName}.<br />
 <br />
 Notre décision est de refuser votre soumission.<br />
 <br />
